@@ -1,0 +1,13 @@
+<div class="item-grid">
+  @for(movie of movies$ | async ; track movie.id){
+  <div class="item-card">
+    <a [routerLink]="['/movies/movie', movie.id]">
+      <img
+        class="item-image"
+        src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}"
+      />
+    </a>
+    <h2 class="item-title">{{ movie.original_title }}</h2>
+  </div>
+  }
+</div>

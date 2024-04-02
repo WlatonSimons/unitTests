@@ -1,0 +1,24 @@
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 90%; // limit the width to 90% of the viewport width
+    max-height: 90%; // limit the height to 90% of the viewport height
+    overflow: auto; // add scrolling if the content is too long
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  

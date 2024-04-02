@@ -1,0 +1,11 @@
+<div class="card">
+    @if(movie$ | async; as movie){
+    <div class="img-container">
+    <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path  }}" alt="{{ movie.original_title  }}">
+    </div>
+    <h2>{{ movie.original_title }}</h2>
+    <p>{{ movie.release_date }}</p>
+    <p>{{ movie.overview }}</p>
+    <button (click)="onClose()">Close</button>
+  }
+  </div>
